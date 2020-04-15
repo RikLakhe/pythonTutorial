@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web page tutorial</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}"
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Test</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home')}}">HOME</a></li>
+                    <li><a href="{{ url_for('about')}}">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container content">
+            {%block content%}
+            {%endblock%}
+        </div>
+    </div>
+</body>
+</html>
