@@ -11,3 +11,4 @@ for filename in fileName:
 with open(str(datetime.datetime.now())+'.txt','w') as file2:
     for cont in content:
         file2.write(cont+'\n')
+
